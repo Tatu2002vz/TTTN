@@ -129,6 +129,11 @@ header {
 .card {
     padding: 16px;
     max-width: 25%;
+    transition: all .3s;
+}
+.card:hover {
+    box-shadow: 0 2px 8px 2px #ccc;
+    transform: translateY(-5px);
 }
 .card i{
     font-size: 64px;
