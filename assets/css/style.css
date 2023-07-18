@@ -49,6 +49,7 @@ header {
     margin-right: 8px;
 }
 .banner {
+    min-height: 700px;
     background: url('https://front-end-essential-practice.web.app/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg');
     background-size: cover;
     background-position: top center;
@@ -128,9 +129,11 @@ header {
 .cards {
     padding-top: 64px;
     display: flex;
+    flex-wrap: wrap;
 }
 .card {
     padding: 16px;
+    flex: 25%;
     max-width: 25%;
     transition: all .3s;
 }
@@ -150,9 +153,11 @@ header {
 .we-know-design {
     background-color: #f1f1f1;
     display: flex;
+    flex-wrap: wrap;
     text-align: left;
 }
 .we-know-design-content {
+    flex: 50%;
     max-width: 50%;
 }
 .we-know-design-content h2 {
@@ -251,4 +256,25 @@ footer .footer-social {
 }
 footer .powered-by {
     padding: 17px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .thumbnails img {
+        flex: 49%;
+        max-width: 49%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .we-know-design-content {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
