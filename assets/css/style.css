@@ -7,6 +7,7 @@
     --black: #000;
     --white: #fff;
     --margin-content: 381.5px;
+    --margin-content-medium: 381.5px;
 }
 html {
     font-family: "Roboto Mono", monospace;
@@ -104,8 +105,10 @@ header {
     left: 40px;
     bottom: 40px;
 }
-.content {
-    padding: 0 var(--margin-content);
+
+.content > div {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 .p128 {
     padding: 128px 16px;
