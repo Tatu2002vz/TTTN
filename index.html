@@ -18,16 +18,18 @@
       </div>
       <nav class="header-nav">
         <ul>
-          <li>
+          <li onclick="closeMenu()">
             <a href="#about"><i class="fa-solid fa-circle-info"></i>about</a>
           </li>
-          <li>
+          <li onclick="closeMenu()">
             <a href="#work"><i class="fa-solid fa-layer-group"></i>work</a>
           </li>
-          <li>
+          <li onclick="closeMenu()">
             <a href="#contact"><i class="fa-solid fa-envelope"></i>contact</a>
           </li>
+          <p onclick="closeMenu()"><i class="fa-solid fa-xmark icon-close"></i></p>
         </ul>
+        <p class="navbar"  onclick="openMenu()" for="navbar-button">Menu <i class="fa-solid fa-bars"></i></p>
       </nav>
     </header>
 
@@ -167,3 +169,20 @@
     </footer>
   </body>
 </html>
+<script>
+  const openMenu = () => {
+    console.log('1')
+    const nav = document.querySelector('.header-nav ul');
+    const navIcon = document.querySelector('.navbar');
+    nav.style.display = 'inline-block';
+    nav.style.transform = 'translateX(0)'
+    navIcon.style.display = 'none'
+  }
+  const closeMenu = () => {
+    const nav = document.querySelector('.header-nav ul');
+    const navIcon = document.querySelector('.navbar');
+    nav.style.display = 'none';
+    nav.style.transform = 'translateX(100%)'
+    navIcon.style.display = 'inline-block'
+  }
+</script>

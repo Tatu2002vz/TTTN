@@ -20,6 +20,13 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
+    height: 54px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
 }
 
 
@@ -57,6 +64,7 @@ header {
     text-align: center;
     position: relative;
     color: var(--white);
+    z-index: -1;
 }
 
 .banner .text-center {
@@ -257,7 +265,12 @@ footer .footer-social {
 footer .powered-by {
     padding: 17px 0;
 }
-
+.navbar {
+    display: none;
+}
+.icon-close {
+    display: none;
+}
 @media screen and (max-width: 1024px) {
     .card {
         flex: 50%;
@@ -276,5 +289,33 @@ footer .powered-by {
     .we-know-design-content {
         flex: 100%;
         max-width: 100%;
+    }
+    .navbar {
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        z-index: 0;
+    }
+    .header-nav ul {
+        padding-top: 40px;
+        flex-direction: column;
+        background-color: var(--black);
+        transform: translateX(100%);
+        display: none;
+        transition: .4s;
+    }
+    .header-nav ul a {
+        color: var(--white);
+        padding-right: 30vw;
+        padding-left: 70px;
+    }
+    .icon-close {
+        display: inline-block;
+        color: var(--white);
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 36px;
     }
 }
