@@ -26,7 +26,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    
+
 }
 
 
@@ -299,11 +299,10 @@ footer .powered-by {
     }
     .header-nav ul {
         padding-top: 40px;
+        padding-bottom: 16px;
         flex-direction: column;
         background-color: var(--black);
-        transform: translateX(100%);
         display: none;
-        transition: .4s;
     }
     .header-nav ul a {
         color: var(--white);
@@ -316,6 +315,6 @@ footer .powered-by {
         position: absolute;
         top: 16px;
         right: 16px;
-        font-size: 36px;
+        font-size: 32px;
     }
 }
