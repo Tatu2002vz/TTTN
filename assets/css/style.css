@@ -303,6 +303,9 @@ footer .powered-by {
         flex-direction: column;
         background-color: var(--black);
         display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .header-nav ul a {
         color: var(--white);
